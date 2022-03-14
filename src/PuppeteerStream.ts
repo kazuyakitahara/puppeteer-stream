@@ -15,7 +15,7 @@ export class Stream extends Readable {
 
 	_read() {}
 
-	async destroy() {
+	async destroyStream() {
 		super.destroy();
 		// @ts-ignore
 		await this.page.browser().videoCaptureExtension.evaluate(

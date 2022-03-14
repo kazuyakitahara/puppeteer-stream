@@ -22,7 +22,7 @@ class Stream extends stream_1.Readable {
         this.page = page;
     }
     _read() { }
-    destroy() {
+    destroyStream() {
         const _super = Object.create(null, {
             destroy: { get: () => super.destroy }
         });
